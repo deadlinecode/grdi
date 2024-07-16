@@ -20,7 +20,7 @@ if [[ ! -z "${RUNNER_WORKDIR}" ]]; then
   runnerParams+=("--work" "$RUNNER_WORKDIR")
 fi
 
-runnerFiles=(".credentials" ".credentials_rsaparams" ".runner")
+runnerFiles=(".credentials" ".credentials_rsaparams" ".runner" ".env")
 
 if [ -z "$(ls -A /data)" ]; then
   echo "No data found, creating new runner..."

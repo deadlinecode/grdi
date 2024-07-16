@@ -30,6 +30,9 @@ If you want to change this or any other setting you can use following environmen
 - `RUNNER_GROUP` - runner group
 
 As soon as you are done configuring just run `docker-compose up -d` and the runner will start.
+> [!CAUTION]
+> Please be aware that these env vars are only taken into account on the first startup/setup.
+If you want to change the settings after that you will need to edit the `data/.runner` file and restart the container.
 
 ## Examples
 
